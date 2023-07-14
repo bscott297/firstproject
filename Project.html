@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chocolate Chip Cookies 🍪</title>
+    <style>
+      body {
+        background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+        color: #51372f;
+        width: 50%;
+        margin: 60px auto;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h1 {
+        text-align: center;
+        color: #51372f;
+        font-weight: bold;
+      }
+      h2 {
+        text-align: center;
+        padding: 20px;
+        font-size: 18px;
+        font-weight: 400;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 15px;
+        margin: 20 0 10px;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #51372f;
+        color: bisque;
+        font-size: 18px;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px 60px;
+      }
+      button:hover {
+        opacity: 0.9;
+        cursor: grab;
+      }
+      .learn-more {
+        text-decoration: none;
+        color: #51372f;
+        font-size: 14px;
+      }
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+      .footer {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>I love Cookies</h1>
+      <hr />
+      <h2>Chocolate Chip cookies are my absolute favorite!</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/049/original/best-chocolate-chip-cookies-recipe-1.jpeg?1688937641"
+        alt="Chocolate Chip"
+        width="300px"
+      />
+      <p>
+        A chocolate chip cookie is a drop cookie that features chocolate chips
+        or chocolate morsels as its distinguishing ingredient. Chocolate chip
+        cookies originated in the United States in 1938, when Ruth Graves
+        Wakefield chopped up a Nestlé semi-sweet chocolate bar and added the
+        chopped chocolate to a cookie recipe.
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Chocolate_chip_cookie"
+        target="_blank"
+        class="learn-more"
+      >
+        <strong> Learn more on Wikipedia </strong>
+      </a>
+      <button class="buy-button">😋 Buy Chocolate Chip Cookies</button>
+      <p class="footer">This page was built by Briana Scott</p>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        if (name.length) {
+          alert(
+            "Thank you " +
+              name +
+              "! We'll be in touch by email, meanwhile enjoy a cookie! "
+          );
+        } else {
+          alert("No name or email? No cookies for you!🤷🏽‍♀️");
+        }
+      }
+      let buyButton = document.querySelector(".buy-button");
+      buyButton.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
